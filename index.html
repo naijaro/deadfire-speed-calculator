@@ -1405,10 +1405,6 @@
         for (var key in ENABLED_EFFECTS)
         {
           var effect = ENABLED_EFFECTS[key];
-          console.log('effect', effect);
-          console.log('MH_WIELDABLE', MH_WIELDABLE);
-          console.log('OH_WIELDABLE', OH_WIELDABLE);
-          console.log('wieldable', wieldable);
           
           if (!EffectAffectsPhase(effect, phase) || effect.suppressed)
             continue;
