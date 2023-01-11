@@ -828,6 +828,24 @@
             ToggleEnabledEffect(false, bonusEffect.id, bonusEffect);
             lockPropagation = false;
           }
+
+          var effectTitlesFromArmor = ["Articulated", "Heavy Mobility", "Lithe Motion", "Unnatural Fit", "Gunnery"];
+          var activeEffectFromArmor = null;
+          effectTitlesFromArmor.forEach(title => { if (effect.title.indexOf(title) >= 0) activeEffectFromArmor = effect; });
+
+          if (activeEffectFromArmor)
+          {
+            lockPropagation = true;
+            effectTitlesFromArmor.forEach(partTitle => { 
+              var armorEffect = GetEffectByTitlePart(partTitle);
+              if (armorEffect.title != activeEffectFromArmor.title)
+              {
+                $effectsBlock.find('.effect-checkbox[data-id="' + armorEffect.id + '"]').bootstrapToggle('off');
+                ToggleEnabledEffect(false, armorEffect.id, armorEffect);
+              }
+            });
+            lockPropagation = false;
+          }
           
           if (effect.suppressingCategory)
             UpdateSuppression();
@@ -992,6 +1010,15 @@
       {
         for (var i in EFFECTS)
           if (EFFECTS[i].title == title)
+            return EFFECTS[i];
+        
+        return null;
+      }
+
+      function GetEffectByTitlePart(titlePart)
+      {
+        for (var i in EFFECTS)
+          if (EFFECTS[i].title.indexOf(titlePart) >= 0)
             return EFFECTS[i];
         
         return null;
