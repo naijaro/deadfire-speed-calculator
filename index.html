@@ -618,12 +618,13 @@
       var EFFECTS = [
         GenEffect(EFFECT_CATEGORIES.affectsAllPhases, 1.25, "Arkemyr's Mercurial Madness", EFFECT_WR.any, null, SUPPRESING_CATEGORIES.attackSpeedMult1),
         GenEffect(EFFECT_CATEGORIES.affectsAllPhases, 1.20, "Bloodlust", EFFECT_WR.any), 
+        GenEffect(EFFECT_CATEGORIES.affectsAllPhases, 1.20, "Captain's Banquet", EFFECT_WR.any, null, SUPPRESING_CATEGORIES.attackSpeedMult1),
         GenEffect(EFFECT_CATEGORIES.affectsAllPhases, 1.25, "Frenzy", EFFECT_WR.any, null, SUPPRESING_CATEGORIES.attackSpeedMult1),
         GenEffect(EFFECT_CATEGORIES.affectsAllPhases, 1.15, "Coral Snuff", EFFECT_WR.any, null, SUPPRESING_CATEGORIES.attackSpeedMult1, null, false, 0),
         GenEffect(EFFECT_CATEGORIES.affectsAllPhases, 1.15, "Deleterious Alacrity", EFFECT_WR.any, null, SUPPRESING_CATEGORIES.attackSpeedMult1),
-        GenEffect(EFFECT_CATEGORIES.affectsAllPhases, 0.75, "Modal: Arbalests", EFFECT_WR.ranged, "Arbalest"), // Overbearing Shot
-        GenEffect(EFFECT_CATEGORIES.affectsAllPhases, 0.75, "Modal: Arquebuses", EFFECT_WR.ranged, "Arquebus"), // Aimed Shot
-        GenEffect(EFFECT_CATEGORIES.affectsAllPhases, 0.75, "Modal: Crossbows", EFFECT_WR.ranged, "Crossbow"), // Interrupting Shot
+        GenEffect(EFFECT_CATEGORIES.affectsAllPhases, 0.75, "Modal: Arbalest", EFFECT_WR.ranged, "Arbalest"), // Overbearing Shot
+        GenEffect(EFFECT_CATEGORIES.affectsAllPhases, 0.75, "Modal: Arquebus", EFFECT_WR.ranged, "Arquebus"), // Aimed Shot
+        GenEffect(EFFECT_CATEGORIES.affectsAllPhases, 0.75, "Modal: Crossbow", EFFECT_WR.ranged, "Crossbow"), // Interrupting Shot
         GenEffect(EFFECT_CATEGORIES.affectsAllPhases, 1.20, "Nature's Bounty", EFFECT_WR.any, null, SUPPRESING_CATEGORIES.attackSpeedMult1),
         GenEffect(EFFECT_CATEGORIES.affectsAllPhases, 1.15, "Potion of Deftness", EFFECT_WR.any, null, SUPPRESING_CATEGORIES.attackSpeedMult1, null, false, 0),
         GenEffect(EFFECT_CATEGORIES.affectsAllPhases, 1.15, "Potion of Relentless Striking", EFFECT_WR.any, null, SUPPRESING_CATEGORIES.attackSpeedMult1, null, false, 0),        
@@ -637,16 +638,16 @@
         GenEffect(EFFECT_CATEGORIES.affectsRecoveryAndReload, 1, "Heavy Mobility (CA)", EFFECT_WR.any, null, SUPPRESING_CATEGORIES.recoveryTimeMult3, null, false, 0.01),
         GenEffect(EFFECT_CATEGORIES.affectsRecoveryAndReload, 1/0.85, "Koiki Fruit", EFFECT_WR.any, null, SUPPRESING_CATEGORIES.recoveryTimeMult1),
         GenEffect(EFFECT_CATEGORIES.affectsRecoveryAndReload, 1/0.95, "Lithe Motion (SH)", EFFECT_WR.any, null, SUPPRESING_CATEGORIES.recoveryTimeMult3), 
-        GenEffect(EFFECT_CATEGORIES.affectsRecoveryAndReload, 1/1.5, "Modal: Battle Axes", EFFECT_WR.melee, "Battle Axe"), // Bleeding Cut
+        GenEffect(EFFECT_CATEGORIES.affectsRecoveryAndReload, 1/1.5, "Modal: Battle Axe", EFFECT_WR.melee, "Battle Axe"), // Bleeding Cut
         GenEffect(EFFECT_CATEGORIES.affectsRecoveryAndReload, 2.00, "Modal: Hunting Bow", EFFECT_WR.ranged, "Hunting Bow", SUPPRESING_CATEGORIES.recoveryTimeMult1), // Rapid Shot
         GenEffect(EFFECT_CATEGORIES.affectsRecoveryAndReload, 1/1.5, "Modal: Mace", EFFECT_WR.melee, "Mace"), // Rending Smash
         GenEffect(EFFECT_CATEGORIES.affectsRecoveryAndReload, 1/1.25, "Modal: Medium Shield", EFFECT_WR.any, "Shield", SUPPRESING_CATEGORIES.recoveryTimeMult2), // Block
-        GenEffect(EFFECT_CATEGORIES.affectsRecoveryAndReload, 1/1.5, "Modal: Quarterstaves", EFFECT_WR.melee, "Quarterstaff"), // Defensive Strike
-        GenEffect(EFFECT_CATEGORIES.affectsRecoveryAndReload, 1/1.5, "Modal: Rapiers", EFFECT_WR.melee, "Rapier"), // Vulnerable Thrust        
-        GenEffect(EFFECT_CATEGORIES.affectsRecoveryAndReload, 1/1.5, "Modal: Sabres", EFFECT_WR.melee, "Sabre"), // Windmill Slash
+        GenEffect(EFFECT_CATEGORIES.affectsRecoveryAndReload, 1/1.5, "Modal: Quarterstaff", EFFECT_WR.melee, "Quarterstaff"), // Defensive Strike
+        GenEffect(EFFECT_CATEGORIES.affectsRecoveryAndReload, 1/1.5, "Modal: Rapier", EFFECT_WR.melee, "Rapier"), // Vulnerable Thrust        
+        GenEffect(EFFECT_CATEGORIES.affectsRecoveryAndReload, 1/1.5, "Modal: Sabre", EFFECT_WR.melee, "Sabre"), // Windmill Slash
         GenEffect(EFFECT_CATEGORIES.affectsRecoveryAndReload, 1/1.25, "Modal: Small Shield", EFFECT_WR.any, "Shield", SUPPRESING_CATEGORIES.recoveryTimeMult2), // Block
-        GenEffect(EFFECT_CATEGORIES.affectsRecoveryAndReload, 1/1.5, "Modal: War Bows", EFFECT_WR.ranged, "War Bow"), // Overdraw
-        GenEffect(EFFECT_CATEGORIES.affectsRecoveryAndReload, 1/1.5, "Modal: War Hammers", EFFECT_WR.melee, "War Hammer"), // Piercing Blows
+        GenEffect(EFFECT_CATEGORIES.affectsRecoveryAndReload, 1/1.5, "Modal: War Bow", EFFECT_WR.ranged, "War Bow"), // Overdraw
+        GenEffect(EFFECT_CATEGORIES.affectsRecoveryAndReload, 1/1.5, "Modal: War Hammer", EFFECT_WR.melee, "War Hammer"), // Piercing Blows
         GenEffect(EFFECT_CATEGORIES.affectsRecoveryAndReload, 1/0.8, "Mohora Wraps", EFFECT_WR.any, null, SUPPRESING_CATEGORIES.recoveryTimeMult1),
         GenEffect(EFFECT_CATEGORIES.affectsRecoveryAndReload, 1.25, "Sure-Handed Chant", EFFECT_WR.ranged, null, null, null, true),
         GenEffect(EFFECT_CATEGORIES.affectsRecoveryAndReload, 1/0.85, "Two-Weapon Style", EFFECT_WR.any, null, null, TWO_WEAPON_STYLE_ID),        
